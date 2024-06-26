@@ -17,7 +17,8 @@ pip install -r requirements.txt
 ```
 
 <h2>Run the provided python script </h2>
-The run the python script, use the command `python main.py` where `main.py`is the specific python file. 
+Inline `code` has `back-ticks around` it.
+The run the python script, use the command  <code>python main.py</code>  where `main.py` is the specific python file. 
 
 `main.py` will extract the data from the .zip file, create the file and folder structure required for the non-linear dynamics analysis. 
 It will write the final output into a .csv file.
