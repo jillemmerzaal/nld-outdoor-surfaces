@@ -5,7 +5,7 @@ Code to calculate the non-linear dynamics analysis of walking on various surface
 cd to the root folder containing the main.py in the terminal or command window, and run the following commands:
 
 ```
-conda create -n nld_surfaces 
+conda create -n nld_surfaces python=3.10 -y
 ```
 
 ```
@@ -17,9 +17,9 @@ pip install -r requirements.txt
 ```
 
 <h2>Run the provided python script </h2>
-The run the python script, use the command ```python main.py``` where ```main.py```is the specific python file. 
+The run the python script, use the command `python main.py` where `main.py`is the specific python file. 
 
-```main.py``` will extract the data from the .zip file, create the file and folder structure required for the non-linear dynamics analysis. 
+`main.py` will extract the data from the .zip file, create the file and folder structure required for the non-linear dynamics analysis. 
 It will write the final output into a .csv file.
 
 
