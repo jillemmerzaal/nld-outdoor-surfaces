@@ -3,9 +3,7 @@ from support_functions.euclidean_norm import euclidean_norm
 from support_functions.symmetry import symmetry
 import numpy.matlib as nmp
 import numpy.polynomial.polynomial as poly
-import matplotlib.pyplot as plt
 import scipy.sparse as sp
-import sys
 
 
 # Some hard coded variables

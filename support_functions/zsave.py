@@ -1,8 +1,6 @@
 import json
-import os
 from datetime import datetime
 import inspect
-import numpy as np
 
 
 def zsave(fl, data, message=''):
