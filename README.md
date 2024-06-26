@@ -1,30 +1,26 @@
-<h1> Non-linear dynamics of outdoor walking </h1>
+# Non-linear dynamics of outdoor walking 
 Code to calculate the non-linear dynamics analysis of walking on various surfaces from a single IMU placed on the lower back
 
-<h2> Pre-requisites </h2>
+## Pre-requisites 
 cd to the root folder containing the main.py in the terminal or command window, and run the following commands:
 
-```
+```python
 conda create -n nld_surfaces python=3.10 -y
 ```
 
-```
+```python
 conda activate nld_surfaces
 ```
 
-```
+```python
 pip install -r requirements.txt
 ```
 
-<h2>Run the provided python script </h2>
-Inline 
-`code` 
-has 
-`back-ticks around` 
-it.
-The run the python script, use the command  <code>python main.py</code>  where `main.py` is the specific python file. 
+## Run the provided python script
 
-`main.py` will extract the data from the .zip file, create the file and folder structure required for the non-linear dynamics analysis. 
+The run the python script, use the command <code>python main.py</code>  where <code>main.py</code> is the specific python file. 
+
+<code>main.py`</code> will extract the data from the .zip file, create the file and folder structure required for the non-linear dynamics analysis. 
 It will write the final output into a .csv file.
 
 
