@@ -69,6 +69,6 @@ def outdoor2zoo(fld):
         time_to_finish = time.time() - start_time
         print(' ')
         print('**********************************')
-        print('Finished converting data in: {0} seconds'.format(time_to_finish.round(2)))
+        print('Finished converting data in: {:.2f} seconds'.format(time_to_finish))
         # print(f"{time.time() - start_time:.2f} seconds")
         print('**********************************')
