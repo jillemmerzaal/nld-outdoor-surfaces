@@ -20,7 +20,7 @@ from support_functions.zsave import zsave
 fld_root = os.getcwd()
 data_file = os.path.join(fld_root, 'data.json.zip')
 fld = os.path.join(fld_root, 'data')  # Setting path for processed data
-fld_stats = os.path.join(fld_root, 'Statistics')
+fld_stats = os.path.join(fld_root, 'Results')
 
 # Remove old processed data folder if it exists
 if os.path.exists(fld):
