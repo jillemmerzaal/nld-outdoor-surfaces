@@ -15,7 +15,7 @@ from support_functions.ldlj import log_dimensionless_jerk_imu
 from support_functions.LyE import LyE_R
 from support_functions.zsave import zsave
 
-# %% Step 0 prepare data
+# %% Step 1 prepare data
 # Ensure the current working directory is the root of the repository
 fld_root = os.getcwd()
 data_file = os.path.join(fld_root, 'data.json.zip')
