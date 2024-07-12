@@ -31,7 +31,7 @@ def zoo2excel(fld, fld_stats):
         # extract data
         data = grab(f)
         file_path, file_name, ext = fileparts(f)
-        print(f'extracting nld on {file_name}{ext} and writing to ')
+        print('extracting nld on {0}{1} and writing to '.format(file_name, ext))
 
         # extract subject/condition from file name
         indx = [i for i, char in enumerate(file_name) if char == '_']

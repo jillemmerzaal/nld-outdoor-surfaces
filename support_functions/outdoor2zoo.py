@@ -37,14 +37,14 @@ def outdoor2zoo(fld):
 
     for c in cons:
         if not r[c]:
-            print(f'no data for condition {c}')
+            print('no data for condition {0}'.format(c))
             continue
 
         subs = r[c].keys()
         for s in subs:
             r[c][s].keys()
-            fname = f"{s}_{c}.zoo"
-            print(f"creating zoo file for {fname}")
+            fname = "{0}_{1}.zoo".format(s, c)
+            print("creating zoo file for {0}".format(fname))
             evts = r[c][s]['last_step_index']
             print(evts)
             data = {}
@@ -59,15 +59,16 @@ def outdoor2zoo(fld):
                     ndata = [ndata]
                 data = addchannel_data(data, f'{ch}', ndata, 'video')
                 if ch == 'Acc_x':
-                    data[f'{ch}']['event'] = {
+                    data['{0}'.format(ch)]['event'] = {
                         f'FS1': [evts, 0, 0],
                     }
 
                 # Save all into to file
             zsave(fname, data)
 
+        time_to_finish = time.time() - start_time
         print(' ')
         print('**********************************')
-        print('Finished converting data in: ')
-        print(f"{time.time() - start_time:.2f} seconds")
+        print('Finished converting data in: {0} seconds'.format(time_to_finish.round(2)))
+        # print(f"{time.time() - start_time:.2f} seconds")
         print('**********************************')

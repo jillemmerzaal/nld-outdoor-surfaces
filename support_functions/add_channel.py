@@ -36,7 +36,8 @@ def addchannel_data(data, ch, ndata, section):
 
     # Check if the channel already exists
     if ch in data:
-        print(f'WARNING: channel {ch} already exists, overwriting with new data')
+        # print(f'WARNING: channel {ch} already exists, overwriting with new data')
+        print("WARNING: channel {0} already exists, overwriting with new data".format(ch))
 
     # Add channel to the zoo structure
     data[ch] = {
