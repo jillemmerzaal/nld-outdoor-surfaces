@@ -36,7 +36,7 @@ shutil.move("data.json", "data/data.json")
 
 # Remove old stats folder if it exists
 if os.path.exists(fld_stats):
-    print('Removing old stats folder...')
+    print('Removing old results folder...')
     shutil.rmtree(fld_stats)
 
 print('Creating folder for Excel sheet output...')
