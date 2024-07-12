@@ -1,12 +1,12 @@
-from support_functions.setZoosystem import setZoosystem
-from support_functions.add_channel import addchannel_data
-from support_functions.zsave import zsave
-from support_functions.engine import engine
-from tkinter import filedialog
 import tkinter as tk
 import time
 import os
 import json
+from tkinter import filedialog
+from support_functions.setZoosystem import setZoosystem
+from support_functions.add_channel import addchannel_data
+from support_functions.zsave import zsave
+from support_functions.engine import engine
 
 # Some hardcoded values
 CHNS = ['Acc_x', 'Acc_y', "Acc_z"]

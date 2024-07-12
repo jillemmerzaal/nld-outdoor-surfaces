@@ -1,11 +1,11 @@
+import os
+import shutil
+import zipfile
 from support_functions.outdoor2zoo import outdoor2zoo
 from support_functions.fileparts import fileparts
 from support_functions.engine import engine
 from support_functions.grab import grab
 from support_functions.add_channel import addchannel_data
-import os
-import shutil
-import zipfile
 from support_functions.zoo2excel import zoo2excel
 
 # support functions for the non-linear analysis

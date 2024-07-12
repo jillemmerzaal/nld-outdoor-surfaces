@@ -1,7 +1,7 @@
+import pandas as pd
 from support_functions.engine import engine
 from support_functions.grab import grab
 from support_functions.fileparts import fileparts
-import pandas as pd
 
 
 def zoo2excel(fld, fld_stats):

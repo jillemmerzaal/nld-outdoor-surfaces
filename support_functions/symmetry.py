@@ -1,5 +1,5 @@
-import statsmodels.tsa.stattools as stattools
 import scipy
+import statsmodels.tsa.stattools as stattools
 from support_functions.euclidean_norm import euclidean_norm
 
 

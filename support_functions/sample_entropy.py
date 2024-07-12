@@ -1,6 +1,6 @@
 import numpy as np
-from support_functions.euclidean_norm import euclidean_norm
 import math
+from support_functions.euclidean_norm import euclidean_norm
 
 # some hard coded variables
 TOL = 0.2
