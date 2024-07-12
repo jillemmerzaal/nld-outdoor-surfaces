@@ -3,6 +3,9 @@ import math
 from support_functions.euclidean_norm import euclidean_norm
 
 # some hard coded variables
+# Yentes, J. M., Hunt, N., Schmid, K. K., Kaipust, J. P., McGrath, D., & Stergiou, N. (2013).
+# The appropriate use of approximate entropy and sample entropy with short data sets.
+# Annals of biomedical engineering, 41, 349-365.
 TOL = 0.2
 DIM = 2
 

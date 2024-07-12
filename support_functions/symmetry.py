@@ -4,6 +4,7 @@ from support_functions.euclidean_norm import euclidean_norm
 
 
 # some hard coded variables
+# deductively chosen to extract only the relevant and dominant peaks.
 MIN_DISTANCE = 30
 MIN_HEIGHT = 0.10
 

@@ -6,8 +6,10 @@ from support_functions.euclidean_norm import euclidean_norm
 from support_functions.symmetry import symmetry
 
 
-
 # Some hard coded variables
+# Bruijn, S. M., Ten Kate, W. R. T., Faber, G. S., Meijer, O. G., Beek, P. J., & van Dieën, J. H. (2010).
+# Estimating dynamic gait stability using data from non-aligned inertial sensors.
+# Annals of biomedical engineering, 38, 2588-2593.
 WS = 10
 
 
