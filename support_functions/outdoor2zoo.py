@@ -15,7 +15,18 @@ SAMPLE_RATE = 100
 
 def outdoor2zoo(fld):
     """
-    OUTDOOR2ZOO is a custom function to convert data from outdoor data set to zoo format
+    OUTDOOR2ZOO is a custom function to convert data from outdoor data set to zoo format. The zoo format in Python is
+    modeled after the biomechZoo toolbox, which is an open-source toolbox for the processing, analysis,
+    and visualization of biomechanical movement data implemented in Matlab.
+    Each data file has n-number of channels containing the time-series data [m x 1] or [m x 3] and
+    any corresponding events [1 x 3]. The file also contains a zoosystem that contains all system information
+    e.g. sample frequency, number of channels, number of events.
+
+    For detailed information about the biomechZoo toolbox, please see:
+    Dixon, P. C., Loh, J. J., Michaud-Paquette, Y., & Pearsall, D. J. (2017). biomechZoo: An open-source toolbox for the
+    processing, analysis, and visualization of biomechanical movement data.
+    Computer Methods and Programs in Biomedicine, 140, 1-10.
+
     :param fld: str. Full path to data folder
     :return: None
     """
