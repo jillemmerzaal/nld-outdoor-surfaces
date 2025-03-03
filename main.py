@@ -14,6 +14,7 @@ from support_functions.symmetry import symmetry
 from support_functions.ldlj import log_dimensionless_jerk_imu
 from support_functions.LyE import LyE_R
 from support_functions.zsave import zsave
+from support_functions.sample_entropy_delay import sample_entropy_delay
 
 # %% Step 1 prepare data
 # Ensure the current working directory is the root of the repository
@@ -22,10 +23,11 @@ data_file = os.path.join(fld_root, 'data.json.zip')
 fld = os.path.join(fld_root, 'data')  # Setting path for processed data
 fld_stats = os.path.join(fld_root, 'Results')
 
-# Remove old processed data folder if it exists
-if os.path.exists(fld):
-    print('Removing old processed data folder...')
-    shutil.rmtree(fld)
+
+
+
+
+
 
 os.makedirs(fld)
 print(f'Unzipping data file {data_file}')
@@ -84,7 +86,7 @@ for f in fl:
     last_step_index = data["Acc_x"]["event"]["FS1"][0]
 
     # perform non-linear dynamics analysis on all gait trails
-    sampen, norm = sample_entropy(data, channels, event=last_step_index)
+    sampen, norm = sample_entropy_delay(data,channels, event=last_step_index)
     d_1, ad_1, d_2, ad_2, autocorr = symmetry(data, channels, event=last_step_index)
     ldlj = log_dimensionless_jerk_imu(data, channels, event=last_step_index)
     lds, AveLnDiv = LyE_R(data, channels, event=last_step_index)
